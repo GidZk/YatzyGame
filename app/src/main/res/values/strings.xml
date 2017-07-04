@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ThirtyGame 2.0</string>
+
+    <!-- welcome screen Strings-->
+    <string name="welcome_text">Press play to play!(duh)</string>
+    <string name="button_play">Play</string>
+
+    <!-- play Activity Strings -->
+    <string name="button_roll">Roll</string>
+
+</resources>

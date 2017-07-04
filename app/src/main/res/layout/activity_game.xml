@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gidzk.thirtygame20.GameActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <Button
+        android:id="@+id/rollbutton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="112dp"
+        android:layout_height="96dp"
+        android:background="@color/colorPlayButton"
+        android:elevation="0dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/button_roll"
+        android:textColor="@color/colorPlayString"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.498" />
+
+
+
+</android.support.constraint.ConstraintLayout>
