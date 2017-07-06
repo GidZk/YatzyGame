@@ -6,11 +6,15 @@
     <color name="window_background">#3b3b3b</color>
     <color name="colorAccent">#FF4081</color>
 
-    <!--PlayButton colors-->
+    <!--Play/RollButton colors-->
     <color name="colorPlayButton">#00994499</color>
     <color name="colorTextButton">#494949</color>
     <color name="colorPlayString">@android:color/holo_green_light</color>
     <color name="colorPlayPressed">#367440</color>
+
+
+    <!--LockButton Colors -->
+    <color name="colorLockButton">#ff3d00</color>
 
 
 </resources>

@@ -19,18 +19,16 @@ public  class ModelTest {
     }
 
 
-
-
-
     // ok tested if they change status.
     public static void modelRollTest(Modelapp model){
         model.onRoll();
         printFaceVals(model.getFaceVals());
-        ArrayList<Integer> toBeLocked = new ArrayList<>();
-        toBeLocked.add(0);
-        toBeLocked.add(1);
-        toBeLocked.add(2);
-         model.onLockedDices(toBeLocked);
+
+        model.model.getDice1().setSelected();
+        model.model.getDice2().setSelected();
+        model.model.getDice3().setSelected();
+
+        model.onLock();
         model.onRoll();
         printFaceVals(model.getFaceVals());
 

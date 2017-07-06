@@ -9,11 +9,13 @@ public class NonRollableDice extends Dice {
 
     public NonRollableDice(){
         super();
+        selected = true;
     }
 
 
     public NonRollableDice(Dice copy) {
         super(copy);
+        selected = true;
     }
 
     @Override

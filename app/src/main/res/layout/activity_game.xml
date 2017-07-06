@@ -8,25 +8,158 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-
-    <Button
-        android:id="@+id/rollbutton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="112dp"
-        android:layout_height="96dp"
-        android:background="@color/colorPlayButton"
-        android:elevation="0dp"
-        android:fontFamily="serif-monospace"
-        android:text="@string/button_roll"
-        android:textColor="@color/colorPlayString"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="76dp"
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.498" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
 
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/dice_button_1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.01"
+                android:text="Button"
+
+                />
+
+            <ImageButton
+                android:id="@+id/dice_button_2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.01"
+                android:text="Button" />
+
+            <ImageButton
+                android:id="@+id/dice_button_3"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.01"
+                android:text="Button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/dice_button_4"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <ImageButton
+                android:id="@+id/dice_button_5"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <ImageButton
+                android:id="@+id/dice_button_6"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Button" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/roll_lock_layout"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="228dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="7dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/mainlayout">
+
+        <Button
+            android:id="@+id/lockButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="160dp"
+            android:layout_height="89dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.41"
+            android:background="@color/colorPlayButton"
+            android:elevation="0dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/button_lock"
+            android:textColor="@color/colorLockButton"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toLeftOf="@+id/rollbutton"
+            tools:layout_editor_absoluteY="428dp" />
+
+        <Button
+            android:id="@+id/rollbutton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="138dp"
+            android:layout_height="91dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="109dp"
+            android:layout_weight="0.57"
+            android:background="@color/colorPlayButton"
+            android:elevation="0dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/button_roll"
+            android:textColor="@color/colorPlayString"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/lockButton"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/window_background"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roll_lock_layout" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -7,5 +7,5 @@
 
     <!-- play Activity Strings -->
     <string name="button_roll">Roll</string>
-
+    <string name="button_lock">Lock</string>
 </resources>

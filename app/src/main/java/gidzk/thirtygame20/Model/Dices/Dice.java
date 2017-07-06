@@ -6,15 +6,14 @@ import java.util.Random;
 public abstract class Dice {
     protected Random rand;
     protected int faceVal;
-    protected boolean rollable;
+    protected boolean selected;
 
     Dice(){
         this.rand = new Random ();
         this.faceVal = rand.nextInt(6) +1;
 
+
     }
-
-
     //Copy constructor
     Dice (Dice copy){
         this.rand = copy.rand;
@@ -26,6 +25,20 @@ public abstract class Dice {
     public int getFaceVal() {
         return faceVal;
     }
+
+    public boolean isSelected(){
+        return selected;
+    }
+
+
+    public void setSelected(){
+        selected = !selected;
+
+    }
+
+
+
+
 
 
 

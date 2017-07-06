@@ -13,6 +13,7 @@ public class RollableDice extends Dice {
 
     public RollableDice() {
         super();
+        selected = false;
     }
 
     @Override
